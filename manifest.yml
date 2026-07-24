@@ -1,8 +1,8 @@
 ---
 applications:
 - name: dlang-btp-service
-  memory: 128M
-  disk_quota: 256M
+  memory: 256M
+  disk_quota: 512M
   instances: 1
   # Verweis auf Ihr zuvor erstelltes Custom Buildpack
-  buildpack: https://github.com
+  buildpack: https://github.com/UIMSolutions/dlang-buildpack.git
