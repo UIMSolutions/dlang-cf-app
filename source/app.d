@@ -6,7 +6,7 @@ import std.conv : to;
 
 void handleRequest(HTTPServerRequest req, HTTPServerResponse res)
 {
-    res.writeBody("Hallo von Dlang auf der SAP BTP Cloud Foundry!", "text/plain; charset=UTF-8");
+    res.writeBody("Hallo Dlang on SAP BTP Cloud Foundry!", "text/plain; charset=UTF-8");
 }
 
 void main()
