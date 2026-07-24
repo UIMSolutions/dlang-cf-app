@@ -9,6 +9,11 @@ void handleRequest(HTTPServerRequest req, HTTPServerResponse res)
     res.writeBody("Hallo Dlang on SAP BTP Cloud Foundry!", "text/plain; charset=UTF-8");
 }
 
+void handleRequestOzan  (HTTPServerRequest req, HTTPServerResponse res)
+{
+    res.writeBody("Hallo Ozan!", "text/plain; charset=UTF-8");
+}
+
 void main()
 {
     auto settings = new HTTPServerSettings;
@@ -20,6 +25,7 @@ void main()
 
     auto router = new URLRouter;
     router.get("/", &handleRequest);
+    router.get("/ozan", &handleRequestOzan);
 
     listenHTTP(settings, router);
     runApplication();
