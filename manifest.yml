@@ -4,5 +4,5 @@ applications:
   memory: 4G
   disk_quota: 4G
   instances: 1
-  # Verweis auf Ihr zuvor erstelltes Custom Buildpack
-  buildpack: https://github.com/UIMSolutions/dlang-buildpack
+  # Nutzt das plattforminterne Standard-Buildpack der SAP BTP
+  buildpack: binary_buildpack
