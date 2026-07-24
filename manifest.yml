@@ -1,0 +1,8 @@
+---
+applications:
+- name: dlang-btp-service
+  memory: 128M
+  disk_quota: 256M
+  instances: 1
+  # Verweis auf Ihr zuvor erstelltes Custom Buildpack
+  buildpack: https://github.com
