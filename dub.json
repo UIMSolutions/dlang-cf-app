@@ -2,7 +2,6 @@
     "name": "dlang-cf-app",
     "description": "Dlang Web-App für Cloud Foundry mit vibe.d 0.10.2",
     "dependencies": {
-        "vibe-d:http": { "path": "deps/vibe.d/http" },
-        "vibe-d:core": { "path": "deps/vibe.d/core" }
+        "vibe-d": { "path": "deps/vibe.d" }
     }
 }

@@ -1,8 +1,8 @@
 ---
 applications:
 - name: dlang-btp-service
-  memory: 512M
-  disk_quota: 512M
+  memory: 4G
+  disk_quota: 4G
   instances: 1
-  # Verweis auf Ihr zuvor erstelltes Custom Buildpack
-  buildpack: https://github.com/UIMSolutions/dlang-buildpack.git
+  # Nutzt das plattforminterne Standard-Buildpack der SAP BTP
+  buildpack: binary_buildpack
